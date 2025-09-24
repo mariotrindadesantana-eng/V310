@@ -237,19 +237,7 @@ if gemini_key and gemini_key != 'sua-chave-aqui':
 else:
     print('⚠️ Gemini API não configurada')
 
-# Testa Supabase
-supabase_url = os.getenv('SUPABASE_URL')
-supabase_key = os.getenv('SUPABASE_ANON_KEY')
-if supabase_url and supabase_key:
-    try:
-        from supabase import create_client
-        client = create_client(supabase_url, supabase_key)
-        print('✅ Supabase configurado')
-    except:
-        print('⚠️ Supabase com problemas')
-else:
-    print('⚠️ Supabase não configurado')
-" 2>nul
+
     cd ..
 ) else (
     echo ⚠️ Arquivo .env não encontrado - APIs não testadas
